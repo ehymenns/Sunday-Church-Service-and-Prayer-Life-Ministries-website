@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Manrope", sans-serif;
+  
+  --color-primary: #355bad;
+  --color-primary-container: #dae2ff;
+  --color-on-primary: #ffffff;
+  --color-secondary: #705d00;
+  --color-secondary-container: #ffe16d;
+  --color-on-secondary-container: #544600;
+  --color-tertiary: #ba1a20;
+  --color-tertiary-container: #ffdad6;
+  --color-on-tertiary-container: #930010;
+  --color-surface: #f8faf9;
+  --color-surface-container-low: #f2f4f3;
+  --color-surface-container-high: #e7e8e8;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #191c1c;
+  --color-on-surface-variant: #404659;
+  --color-outline-variant: #c0c6dc;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.spectrum-gradient {
+  background: linear-gradient(135deg, #355bad 0%, #ba1a20 50%, #705d00 100%);
+}
+
+.spectrum-glow {
+  background: linear-gradient(135deg, rgba(53, 91, 173, 0.1) 0%, rgba(186, 26, 32, 0.1) 50%, rgba(255, 225, 109, 0.1) 100%);
+}
+
+.spectrum-path {
+  background: linear-gradient(135deg, #355bad 0%, #ba1a20 50%, #ffe16d 100%);
+  opacity: 0.05;
+}

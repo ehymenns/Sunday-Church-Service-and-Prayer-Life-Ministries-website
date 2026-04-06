@@ -25,7 +25,7 @@ export function Navbar() {
             />
           </div>
           <span className="text-lg font-bold tracking-tight text-primary hidden sm:block">
-            God's Armed Forces
+            S.C.S.P.l.M
           </span>
         </Link>
 

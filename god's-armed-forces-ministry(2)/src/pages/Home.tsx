@@ -52,7 +52,7 @@ export default function Home() {
           </div>
 
           {/* Founder Portrait */}
-          <div className="relative pt-16 max-w-md mx-auto">
+          <div className="relative pt-16 max-w-md mx-auto space-y-8">
             <div className="relative z-20 bg-surface-container-lowest p-3 rounded-[2.5rem] shadow-2xl border border-white/50">
               <div className="rounded-[2rem] overflow-hidden aspect-[4/5] bg-surface-container">
                 <img 
@@ -67,7 +67,8 @@ export default function Home() {
                 <p className="text-secondary font-bold font-label text-sm uppercase tracking-[0.15em] mt-1">Founder & President</p>
               </div>
             </div>
-            <div className="absolute -bottom-10 -left-12 z-30 bg-tertiary text-on-tertiary p-8 rounded-3xl shadow-2xl max-w-xs -rotate-2 hidden md:block">
+            
+            <div className="bg-tertiary text-on-tertiary p-8 rounded-3xl shadow-2xl text-left hidden md:block">
               <span className="material-symbols-outlined text-4xl block mb-2">format_quote</span>
               <p className="font-headline font-bold text-xl italic leading-tight">
                 "The Outcome You Get From Our Service Will Convince You"
